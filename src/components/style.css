@@ -1,0 +1,25 @@
+.border {
+  border: 1px solid #37474f;
+}
+
+.txt:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.margin {
+  margin: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  #movie {
+    display: block;
+  }
+  .row,
+  .col {
+    width: 100% !important;
+  }
+  .card-image {
+    width: 250px;
+  }
+}
