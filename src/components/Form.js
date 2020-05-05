@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 const Form = ({ setMovie }) => {
   //definir movie
   const [busqueda, setBusqueda] = useState({
@@ -18,8 +17,8 @@ const Form = ({ setMovie }) => {
   //extraer valores
   const { title, year } = busqueda;
 
-  const sendMovie = (event) => {
-      event.preventDefault()
+  const sendMovie = event => {
+    event.preventDefault();
     if (title.trim() === "") {
       setError(true);
       return;
@@ -33,10 +32,11 @@ const Form = ({ setMovie }) => {
     <form onSubmit={sendMovie}>
       <div className="input-field">
         <div className="row card-panel lighten-4">
-        {error ? <p>Fill the inputs please</p> : null}
+          {error ? <p>Fill the inputs please</p> : null}
           <div className="block col s-12">
             <label className=" blue-grey-text darken-3 flow-text">
-              You don´t know what to watch? Search a movie or a TV show that you like and we will recommend you 20 related options.
+              You don´t know what to watch? Search a movie or a TV show that you
+              like and we will recommend you 20 related options.
             </label>
             <h6 className="blue-grey-text darken-3">Title</h6>
             <input
@@ -56,11 +56,13 @@ const Form = ({ setMovie }) => {
               onChange={handleChange}
               value={year}
             />
-             <button type="submit" className="waves-effect waves-light btn blue-grey lighten-2 margin-top margin">
-            Search
-          </button>
+            <button
+              type="submit"
+              className="waves-effect waves-light btn blue-grey lighten-2 margin-top"
+            >
+              Search
+            </button>
           </div>
-         
         </div>
       </div>
     </form>

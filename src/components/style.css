@@ -10,6 +10,9 @@
 .margin {
   margin: 2rem;
 }
+.margin-top {
+  margin-top: 2rem;
+}
 
 @media screen and (max-width: 900px) {
   #movie {

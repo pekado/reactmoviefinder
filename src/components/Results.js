@@ -2,8 +2,6 @@ import React, { Fragment } from "react";
 import Related from "./Related";
 import Movie from "./Movie";
 
-
-
 const Results = ({ related, movieResults, setMovie }) => {
   return (
     <Fragment>
